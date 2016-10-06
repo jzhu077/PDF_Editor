@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3323071DA30D2900AB2193 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3323061DA30D2900AB2193 /* Body.swift */; };
+		3C45E6341DA5ED9300B1C7AA /* answers in Resources */ = {isa = PBXBuildFile; fileRef = 3C45E6331DA5ED9300B1C7AA /* answers */; };
 		3CF9189E1DA202B800918234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9189D1DA202B800918234 /* AppDelegate.swift */; };
 		3CF918A01DA202B800918234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9189F1DA202B800918234 /* Assets.xcassets */; };
 		3CF918A31DA202B800918234 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF918A11DA202B800918234 /* MainMenu.xib */; };
 		3CF918AE1DA202B800918234 /* PDF_EditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF918AD1DA202B800918234 /* PDF_EditorTests.swift */; };
 		3CF918B91DA202B800918234 /* PDF_EditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF918B81DA202B800918234 /* PDF_EditorUITests.swift */; };
+		3CF918C81DA202F100918234 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF918C71DA202F100918234 /* Quartz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C3323061DA30D2900AB2193 /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
+		3C45E6331DA5ED9300B1C7AA /* answers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = answers; sourceTree = "<group>"; };
 		3CF9189A1DA202B800918234 /* PDF_Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDF_Editor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF9189D1DA202B800918234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CF9189F1DA202B800918234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		3CF918B41DA202B800918234 /* PDF_EditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDF_EditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF918B81DA202B800918234 /* PDF_EditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_EditorUITests.swift; sourceTree = "<group>"; };
 		3CF918BA1DA202B800918234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF918C71DA202F100918234 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF918C81DA202F100918234 /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 				3CF918AC1DA202B800918234 /* PDF_EditorTests */,
 				3CF918B71DA202B800918234 /* PDF_EditorUITests */,
 				3CF9189B1DA202B800918234 /* Products */,
+				3CF918C61DA202F000918234 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,10 +101,12 @@
 		3CF9189C1DA202B800918234 /* PDF_Editor */ = {
 			isa = PBXGroup;
 			children = (
+				3C45E6331DA5ED9300B1C7AA /* answers */,
 				3CF9189D1DA202B800918234 /* AppDelegate.swift */,
 				3CF9189F1DA202B800918234 /* Assets.xcassets */,
 				3CF918A11DA202B800918234 /* MainMenu.xib */,
 				3CF918A41DA202B800918234 /* Info.plist */,
+				3C3323061DA30D2900AB2193 /* Body.swift */,
 			);
 			path = PDF_Editor;
 			sourceTree = "<group>";
@@ -117,6 +127,14 @@
 				3CF918BA1DA202B800918234 /* Info.plist */,
 			);
 			path = PDF_EditorUITests;
+			sourceTree = "<group>";
+		};
+		3CF918C61DA202F000918234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CF918C71DA202F100918234 /* Quartz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C45E6341DA5ED9300B1C7AA /* answers in Resources */,
 				3CF918A01DA202B800918234 /* Assets.xcassets in Resources */,
 				3CF918A31DA202B800918234 /* MainMenu.xib in Resources */,
 			);
@@ -252,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C3323071DA30D2900AB2193 /* Body.swift in Sources */,
 				3CF9189E1DA202B800918234 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +512,7 @@
 				3CF918BF1DA202B800918234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CF918C01DA202B800918234 /* Build configuration list for PBXNativeTarget "PDF_EditorTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +521,7 @@
 				3CF918C21DA202B800918234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CF918C31DA202B800918234 /* Build configuration list for PBXNativeTarget "PDF_EditorUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +530,7 @@
 				3CF918C51DA202B800918234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
